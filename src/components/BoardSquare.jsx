@@ -21,7 +21,7 @@ export default function BoardSquare({ piece, black, position }) {
         : setPromotion(null)
     );
     return () => subscribe.unsubscribe();
-  }, []);
+  }, [position]);
 
   return (
     <div className="board-square" ref={drop}>
