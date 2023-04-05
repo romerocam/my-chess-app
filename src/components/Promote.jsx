@@ -1,7 +1,7 @@
 import React from "react";
 import Square from "./Square";
 import { move } from "../Game";
-// const promotionPieces = ["r", "n", "b", "q"];
+const promotionPieces = ["r", "n", "b", "q"];
 
 export default function Promote({ promotion: { from, to, color } }) {
   return (
