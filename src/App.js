@@ -24,7 +24,7 @@ function App() {
         <h2 className="vertical-text">
           GAME OVER
           <button onClick={resetGame}>
-            <span className="vertical-text"> NEW GAME</span>
+            <span className="vertical-text"> NEW GAME </span>
           </button>
         </h2>
       )}
