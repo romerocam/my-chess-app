@@ -10,7 +10,7 @@ function App() {
   const [turn, setTurn] = useState()
   useEffect(() => {
     initGame()
-    const subscribe = gameSubject.subscribe((game) => {
+    const subscribe = gameSubject.subscribe((game)  => {
       setBoard(game.board)
       setIsGameOver(game.isGameOver)
       setResult(game.result)
