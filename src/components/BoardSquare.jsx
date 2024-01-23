@@ -5,7 +5,7 @@ import { useDrop } from "react-dnd";
 import { handleMove, gameSubject } from "../Game";
 import Promote from "./Promote";
 
-export default function BoardSquare({ piece, black, position }) {
+export default function BoardSquare({piece, black, position }) {
   const [, drop] = useDrop({
     accept: "piece",
     drop: (item) => {
