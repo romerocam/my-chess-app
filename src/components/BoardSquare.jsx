@@ -9,7 +9,7 @@ export default function BoardSquare({ piece, black, position }) {
   const [, drop] = useDrop({
     accept: "piece",
     drop: (item) => {
-      const [fromPosition] = item.id.split(".");
+      const [fromPosition] = item.id.split("_");
       handleMove(fromPosition, position);
     },
   });
